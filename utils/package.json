@@ -1,0 +1,8 @@
+{
+  "name": "@gg/utils",
+  "version": "0.0.1",
+  "main": "index",
+  "types": "index.d.ts",
+  "private": true,
+  "packageManager": "yarn@3.6.1"
+}
