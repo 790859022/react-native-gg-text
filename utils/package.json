@@ -4,5 +4,22 @@
   "main": "index",
   "types": "index.d.ts",
   "private": true,
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^17.1.1"
+  },
+  "release-it": {
+    "git": false,
+    "plugins": {
+      "@release-it/bumper": {
+        "out": {
+          "file": "package.json",
+          "path": ["dependencies.package-a", "devDependencies.package-b"]
+        }
+      }
+    }
+  }
 }

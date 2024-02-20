@@ -1937,6 +1937,8 @@ __metadata:
 "@gg/utils@workspace:^, @gg/utils@workspace:utils":
   version: 0.0.0-use.local
   resolution: "@gg/utils@workspace:utils"
+  dependencies:
+    release-it: ^17.1.1
   languageName: unknown
   linkType: soft
 
@@ -1988,7 +1990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iarna/toml@npm:2.2.5":
+"@iarna/toml@npm:2.2.5, @iarna/toml@npm:^2.2.5":
   version: 2.2.5
   resolution: "@iarna/toml@npm:2.2.5"
   checksum: b63b2b2c4fd67969a6291543ada0303d45593801ee744b60f5390f183c03d9192bc67a217abb24be945158f1935f02840d9ffff40c0142aa171b5d3b6b6a3ea5
@@ -2985,6 +2987,23 @@ __metadata:
   peerDependencies:
     react-native: "*"
   checksum: 59826b146cdcff358f27b118b9dcc6fa23534f3880b5e8546c79aedff8cb4e028af652b0371e0080610e30a250c69607f45b2066c83762788783ccf2031938e3
+  languageName: node
+  linkType: hard
+
+"@release-it/bumper@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "@release-it/bumper@npm:6.0.1"
+  dependencies:
+    "@iarna/toml": ^2.2.5
+    detect-indent: 7.0.1
+    fast-glob: ^3.3.2
+    ini: ^4.1.1
+    js-yaml: ^4.1.0
+    lodash-es: ^4.17.21
+    semver: ^7.3.7
+  peerDependencies:
+    release-it: ^17.0.0
+  checksum: b143e39318c09ced108a368ef6f01939c65bab5bfe4f808773a6280ff11799805a05d071e23e80a41906718d4716c39721f89105059b9832fd8144e70b111e65
   languageName: node
   linkType: hard
 
@@ -5328,6 +5347,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"detect-indent@npm:7.0.1":
+  version: 7.0.1
+  resolution: "detect-indent@npm:7.0.1"
+  checksum: cbf3f0b1c3c881934ca94428e1179b26ab2a587e0d719031d37a67fb506d49d067de54ff057cb1e772e75975fed5155c01cd4518306fee60988b1486e3fc7768
+  languageName: node
+  linkType: hard
+
 "detect-newline@npm:^3.0.0":
   version: 3.1.0
   resolution: "detect-newline@npm:3.1.0"
@@ -7225,6 +7251,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ini@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "ini@npm:4.1.1"
+  checksum: 0e5909554074fbc31824fa5415b0f604de4a665514c96a897a77bf77353a7ad4743927321270e9d0610a9d510ccd1f3cd77422f7cc80d8f4542dbce75476fb6d
+  languageName: node
+  linkType: hard
+
 "inquirer@npm:9.2.14":
   version: 9.2.14
   resolution: "inquirer@npm:9.2.14"
@@ -8762,6 +8795,13 @@ __metadata:
   dependencies:
     p-locate: ^5.0.0
   checksum: 72eb661788a0368c099a184c59d2fee760b3831c9c1c33955e8a19ae4a21b4116e53fa736dc086cdeb9fce9f7cc508f2f92d2d3aae516f133e16a2bb59a39f5a
+  languageName: node
+  linkType: hard
+
+"lodash-es@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash-es@npm:4.17.21"
+  checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
   languageName: node
   linkType: hard
 
@@ -10722,6 +10762,7 @@ __metadata:
     "@evilmartians/lefthook": ^1.5.0
     "@gg/utils": "workspace:^"
     "@react-native/eslint-config": ^0.73.1
+    "@release-it/bumper": ^6.0.1
     "@release-it/conventional-changelog": ^5.0.0
     "@types/jest": ^29.5.5
     "@types/react": ^18.2.44
