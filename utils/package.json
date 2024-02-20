@@ -1,6 +1,6 @@
 {
   "name": "@gg/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index",
   "types": "index.d.ts",
   "private": true,
@@ -9,17 +9,13 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "release-it": "^17.1.1"
+    "release-it": "^17.1.1",
+    "package-b": "0.0.2"
   },
   "release-it": {
-    "git": false,
-    "plugins": {
-      "@release-it/bumper": {
-        "out": {
-          "file": "package.json",
-          "path": ["dependencies.package-a", "devDependencies.package-b"]
-        }
-      }
-    }
+    "git": false
+  },
+  "dependencies": {
+    "package-a": "0.0.2"
   }
 }
