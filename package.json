@@ -36,6 +36,9 @@
     "release": "release-it",
     "release-wk": "npm run release --workspaces && release-it"
   },
+  "harmony": {
+    "alias": "react-native-gg-text"
+  },
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
