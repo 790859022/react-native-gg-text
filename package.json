@@ -1,6 +1,6 @@
 {
   "name": "react-native-gg-text",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "gg text",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
