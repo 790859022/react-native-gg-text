@@ -164,8 +164,5 @@
     "name": "RNGgTextViewSpec",
     "type": "components",
     "jsSrcsDir": "src"
-  },
-  "dependencies": {
-    "@gg/utils": "0.0.1"
   }
 }

@@ -1,6 +1,6 @@
 import { Text, View, StyleSheet, Alert } from 'react-native';
 import React, { Component } from 'react';
-import { add, sub } from '@gg/utils';
+import { add, sub } from '../utils';
 
 const styles = StyleSheet.create({
   container: {
